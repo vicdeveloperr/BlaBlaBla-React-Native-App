@@ -2,16 +2,20 @@
 
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import { tongueTwister1, tongueTwister2, tongueTwister3, tongueTwister4, tongueTwister5 } from '../utils/Trabalenguas';
 
 const DictionTraining: React.FC = () => {
-    const [tongueTwister, setTongueTwister] = useState<string>("Tres tristes tigres tragan trigo en un trigal.");
 
+    const [tongueTwister, setTongueTwister] = useState<string>(tongueTwister1);
     const generateRandomTongueTwister = () => {
-        // Lista de trabajenguas (puedes agregar más)
+
+        // Lista de trabalenguas
         const tongueTwisters = [
-        "Tres tristes tigres tragan trigo en un trigal.",
-        "Pedro Pérez pintor pinta preciosos paisajes por poco precio.",
-        "Cómo poco coco como, poco coco compro.",
+        tongueTwister1,
+        tongueTwister2,
+        tongueTwister3,
+        tongueTwister4,
+        tongueTwister5
         ];
 
 
