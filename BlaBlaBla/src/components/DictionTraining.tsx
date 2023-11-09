@@ -53,7 +53,8 @@ const DictionTraining: React.FC = () => {
 const styles = StyleSheet.create({
     personTalkinImg: {
         aspectRatio: '1/1',
-        maxHeight: 200
+        maxHeight: 200,
+        backgroundColor: '#000'
     }
 });
 
