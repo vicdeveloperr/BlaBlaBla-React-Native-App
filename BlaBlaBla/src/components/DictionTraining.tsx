@@ -1,7 +1,7 @@
 // DictionTraining.tsx
 
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { tongueTwister1, tongueTwister2, tongueTwister3, tongueTwister4, tongueTwister5 } from '../utils/Trabalenguas';
 
 const DictionTraining: React.FC = () => {
@@ -33,6 +33,12 @@ const DictionTraining: React.FC = () => {
     };
     return (
     <View>
+        <Image 
+            style={styles.personTalkinImg} 
+            source={
+                require('../../assets/personTalking.png')
+            } 
+        />
         <Text>¡Ponte un lapíz en la boca, y lee!</Text> 
         {/* Mostrar el trabalenguas actual */}
         <Text>{tongueTwister}</Text>
@@ -43,5 +49,13 @@ const DictionTraining: React.FC = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+    personTalkinImg: {
+        aspectRatio: '1/1',
+        maxHeight: 200,
+        backgroundColor: '#000'
+    }
+});
 
 export default DictionTraining;
