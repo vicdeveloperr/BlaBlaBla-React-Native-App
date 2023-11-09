@@ -27,11 +27,11 @@ const DictionTraining: React.FC = () => {
         setTongueTwister(randomTongueTwister);
     };
 
-  const startTraining = () => {
-    // Lógica para iniciar el entrenamiento
-    console.log('Entrenamiento iniciado con el trabalenguas:', tongueTwister);
-  };
-  return (
+    const startTraining = () => {
+        // Lógica para iniciar el entrenamiento
+        console.log('Entrenamiento iniciado con el trabalenguas:', tongueTwister);
+    };
+    return (
     <View>
         <Text>¡Ponte un lapíz en la boca, y lee!</Text> 
         {/* Mostrar el trabalenguas actual */}
