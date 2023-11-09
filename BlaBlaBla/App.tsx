@@ -1,13 +1,13 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import DictionTraining from './src/components/DictionTraining'
 
 export default function App() {
 
   return (
   <>
-    <View style={styles.container}>
+    <ScrollView scrollEnabled contentContainerStyle={styles.container}>
       <DictionTraining />
-    </View>
+    </ScrollView>
   </>
   );
 }

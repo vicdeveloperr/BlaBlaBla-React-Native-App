@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     textNormal: {
         color: '#fff',
         fontSize: 17,
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        lineHeight: 30
     }, 
     h1: {
         fontSize: 30,
