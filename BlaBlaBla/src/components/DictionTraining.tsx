@@ -1,7 +1,7 @@
 // DictionTraining.tsx
 
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { tongueTwister1, tongueTwister2, tongueTwister3, tongueTwister4, tongueTwister5 } from '../utils/Trabalenguas';
 
 const DictionTraining: React.FC = () => {
@@ -32,7 +32,7 @@ const DictionTraining: React.FC = () => {
         console.log('Entrenamiento iniciado con el trabalenguas:', tongueTwister);
     };
     return (
-    <View>
+    <>
         <Image 
             style={styles.personTalkinImg} 
             source={
@@ -46,15 +46,14 @@ const DictionTraining: React.FC = () => {
         <TouchableOpacity onPress={generateRandomTongueTwister}>
         <Text>Generar nuevo trabalenguas</Text>
         </TouchableOpacity>
-    </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
     personTalkinImg: {
         aspectRatio: '1/1',
-        maxHeight: 200,
-        backgroundColor: '#000'
+        maxHeight: 200
     }
 });
 
