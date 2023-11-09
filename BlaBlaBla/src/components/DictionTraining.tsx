@@ -39,11 +39,11 @@ const DictionTraining: React.FC = () => {
                 require('../../assets/personTalking.png')
             } 
         />
-        <Text style={[styles.textNormal, styles.h1]}>¡Ponte un lapíz en la boca, y lee!</Text> 
+        <Text style={[styles.textNormal, styles.h1, styles.marginBetweenContent]}>¡Ponte un lapíz en la boca, y lee!</Text> 
         {/* Mostrar el trabalenguas actual */}
-        <Text style={styles.textNormal}>{tongueTwister}</Text>
+        <Text style={[styles.textNormal, styles.marginBetweenContent]}>{tongueTwister}</Text>
         {/* Botón para generar un nuevo trabalenguas */}
-        <TouchableOpacity style={styles.button} onPress={generateRandomTongueTwister}>
+        <TouchableOpacity style={[styles.button, styles.marginBetweenContent]} onPress={generateRandomTongueTwister}>
             <Text style={[styles.textNormal, styles.textButton]}>Generar nuevo trabalenguas</Text>
         </TouchableOpacity>
     </>
@@ -57,23 +57,29 @@ const styles = StyleSheet.create({
     },
     textNormal: {
         color: '#fff',
-        fontSize: 17
+        fontSize: 17,
+        fontStyle: 'italic'
     }, 
     h1: {
         fontSize: 30,
         fontWeight: 'bold',
         textAlign: 'left',
-        width: '100%'
+        width: '100%',
+        fontStyle: 'normal'
     },
     button: {
         backgroundColor: '#d14444',
-        borderRadius: 5,
-        padding: 8,
+        borderRadius: 10,
+        paddingVertical: 10,
         width: '100%'
     },
     textButton: {
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontStyle: 'normal'
+    },
+    marginBetweenContent: {
+        marginVertical: 8
     }
 });
 
