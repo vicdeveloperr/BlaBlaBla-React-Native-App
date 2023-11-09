@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, TouchableOpacity } from 'react-native'
 
 const DictionTrainingController: React.FC = () => {
-  const [tongueTwister, setTongueTwister] = useState<string>('');
+  const [tongueTwister, setTongueTwister] = useState<string>("Tres tristes tigres tragan trigo en un trigal.");
 
   const generateRandomTongueTwister = () => {
     // Lista de trabajenguas (puedes agregar más)
@@ -11,6 +11,7 @@ const DictionTrainingController: React.FC = () => {
       "Pedro Pérez pintor pinta preciosos paisajes por poco precio.",
       "Cómo poco coco como, poco coco compro.",
     ];
+
 
     // Seleccionar un trabalenguas aleatorio
     const randomIndex = Math.floor(Math.random() * tongueTwisters.length);
