@@ -18,5 +18,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#002',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    paddingHorizontal: 18
   },
 });

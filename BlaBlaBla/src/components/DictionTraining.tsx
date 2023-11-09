@@ -61,7 +61,9 @@ const styles = StyleSheet.create({
     }, 
     h1: {
         fontSize: 30,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'left',
+        width: '100%'
     },
     button: {
         backgroundColor: '#d14444',
