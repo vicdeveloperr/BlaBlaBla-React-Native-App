@@ -6,7 +6,7 @@ import Training from './src/components/Training'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Training />
+      <DictionTraining />
     </View>
   );
 }
