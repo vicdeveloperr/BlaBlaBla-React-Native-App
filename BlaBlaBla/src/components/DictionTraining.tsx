@@ -39,11 +39,11 @@ const DictionTraining: React.FC = () => {
                 require('../../assets/personTalking.png')
             } 
         />
-        <Text style={[styles.textNormal, styles.h1, styles.marginBetweenContent]}>¡Ponte un lapíz en la boca, y lee!</Text> 
+        <Text style={[styles.textNormal, styles.h1]}>¡Ponte un lapíz en la boca, y lee!</Text> 
         {/* Mostrar el trabalenguas actual */}
-        <Text style={[styles.textNormal, styles.marginBetweenContent]}>{tongueTwister}</Text>
+        <Text style={[styles.textNormal]}>{tongueTwister}</Text>
         {/* Botón para generar un nuevo trabalenguas */}
-        <TouchableOpacity style={[styles.button, styles.marginBetweenContent]} onPress={generateRandomTongueTwister}>
+        <TouchableOpacity style={[styles.button]} onPress={generateRandomTongueTwister}>
             <Text style={[styles.textNormal, styles.textButton]}>Generar nuevo trabalenguas</Text>
         </TouchableOpacity>
     </>
@@ -78,9 +78,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         fontStyle: 'normal'
-    },
-    marginBetweenContent: {
-        marginVertical: 8
     }
 });
 

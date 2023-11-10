@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#002',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingHorizontal: 18
+    justifyContent: 'space-around',
+    paddingHorizontal: 18,
+    maxHeight: 950
   },
 });
