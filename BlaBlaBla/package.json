@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "ts:check": "tsc",  
+    "ts:check": "tsc",
     "start": "expo start",
     "dev": "expo start --tunnel",
     "android": "expo start --android",
@@ -14,7 +14,10 @@
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-native": "0.72.6",
+    "react-native-web": "~0.19.6",
+    "@expo/webpack-config": "^19.0.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
