@@ -18,6 +18,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     paddingHorizontal: 18,
-    maxHeight: 950
+    maxHeight: 970
   },
 });
