@@ -4,7 +4,7 @@
     "slug": "BlaBlaBla",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/personTalkin.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
