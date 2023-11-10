@@ -5,7 +5,7 @@ export default function App() {
 
   return (
   <>
-    <ScrollView scrollEnabled contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <DictionTraining />
     </ScrollView>
   </>
@@ -14,7 +14,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#002',
     alignItems: 'center',
     justifyContent: 'flex-start',
